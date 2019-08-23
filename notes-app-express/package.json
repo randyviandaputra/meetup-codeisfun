@@ -1,0 +1,8 @@
+{
+  "name": "notes-app-express",
+  "version": "1.0.0",
+  "description": "sample express",
+  "main": "index.js",
+  "author": "Randy Vianda Putra <modulloe@gmail.com>",
+  "license": "MIT"
+}
