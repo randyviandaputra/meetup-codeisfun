@@ -1,2 +1,5 @@
 .DS_Store
 /notes-app/.DS_Store
+/notes-app-express/.DS_Store
+/notes-app-express/node_modules
+/notes-app-express/db/.DS_Store
