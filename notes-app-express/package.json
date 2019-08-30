@@ -1,8 +1,16 @@
 {
-  "name": "notes-app-express",
+  "name": "pertemuan-10",
   "version": "1.0.0",
-  "description": "sample express",
-  "main": "index.js",
-  "author": "Randy Vianda Putra <modulloe@gmail.com>",
-  "license": "MIT"
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Randy Vianda Putra",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
 }
