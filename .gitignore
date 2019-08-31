@@ -1,7 +1,7 @@
 .DS_Store
 /todo-js/.DS_Store
 /notes-api/.DS_Store
-/notes-api/node_modules
+# /notes-api/node_modules
 /notes-api/db/.DS_Store
 /todo-react/node_modules
 /todo-react/public/.DS_Store
