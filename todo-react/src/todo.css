@@ -1,0 +1,11 @@
+.todo {
+  margin: 5px;
+  height: 25px;
+  outline: none;
+  border: 1px solid #20232a;
+  padding: 5px;
+  border-radius: 5px;
+  color: #20232a;
+  text-align: center;
+  font-size: 18px;
+}

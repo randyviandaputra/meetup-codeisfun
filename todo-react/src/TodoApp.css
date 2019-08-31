@@ -1,0 +1,14 @@
+.todo-app {
+  width: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: bold
+}
+
+.center {
+  text-align: center
+}
