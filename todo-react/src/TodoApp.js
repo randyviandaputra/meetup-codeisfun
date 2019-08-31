@@ -19,18 +19,21 @@ class TodoApp extends React.Component {
   }
 
   async onAddTodo(description) {
-    const request = await fetch('http://127.0.0.1:3000/api/v1/todos', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        description: description,
-      }),
-    })
-    const res = await request.json()
-    this.setState({todos: res.todos})
+    if (description) {
+      const request = await fetch('http://127.0.0.1:3000/api/v1/todos', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          description: description,
+        }),
+      })
+      const res = await request.json()
+      this.setState({todos: res.todos})
+
+    }
   }
 
   onSearchTodo(searchText) {
