@@ -108,12 +108,7 @@ app.put('/api/v1/todos/:id', (req, res) => {
     })
   }
 
-  if (!req.body.title) {
-    return res.status(400).send({
-      success: false,
-      message: 'title is required',
-    })
-  } else if (!req.body.description) {
+  if (!req.body.description) {
     return res.status(400).send({
       success: false,
       message: 'description is required',
@@ -122,8 +117,8 @@ app.put('/api/v1/todos/:id', (req, res) => {
 
   const updatedTodo = {
     id: findTodo.id,
-    title: req.body.title || findTodo.title,
     description: req.body.description || findTodo.description,
+    completed: req.body.completed || findTodo.completed,
   }
 
   db.splice(todoIndex, 1, updatedTodo)
@@ -131,7 +126,7 @@ app.put('/api/v1/todos/:id', (req, res) => {
   return res.status(201).send({
     success: true,
     message: 'berhasil di update',
-    updatedTodo,
+    todos: db,
   })
 })
 
