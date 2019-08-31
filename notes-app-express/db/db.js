@@ -1,9 +1,9 @@
 const todos = [
   {
     id: 1,
-    title: 'makan pagi',
-    description: 'saya harus sarapan pagi'
-  }
+    description: 'saya harus sarapan pagi',
+    completed: false,
+  },
 ]
 
 module.exports = todos
