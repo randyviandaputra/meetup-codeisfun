@@ -3,3 +3,6 @@
 /notes-app-express/.DS_Store
 /notes-app-express/node_modules
 /notes-app-express/db/.DS_Store
+/todo-react/node_modules
+/todo-react/public/.DS_Store
+/todo-react/src/.DS_Store
