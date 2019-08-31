@@ -32,7 +32,6 @@ class TodoApp extends React.Component {
       })
       const res = await request.json()
       this.setState({todos: res.todos})
-
     }
   }
 
